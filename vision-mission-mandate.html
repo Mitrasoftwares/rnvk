@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #000428, #004683);
+    animation: background-color 20s;
+    min-height: 100vh;
+}
+
+@keyframes background-color {
+    0% {
+        background: linear-gradient(to bottom, #000428, #004683);
+    }
+
+    25% {
+        background: linear-gradient(135deg, #1a4223, #5ee95e);
+    }
+
+    50% {
+        background: linear-gradient(to bottom, #421a31, #e95ed2);
+    }
+
+    100% {
+        background: linear-gradient(-135deg, #fae37d, #881da8, #20668f);
+    }
+
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.container .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+.card .face {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0.3, 0, 0.1);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.06);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    /* border-right: 1px solid #999;
+border-bottom: 1px solid #999; */
+}
+
+.card .face.front-face,
+.card .face.back-face {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .face.front-face .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card .face.front-face .name {
+    letter-spacing: 2px;
+}
+
+.card .face.front-face .designation {
+    font-size: 0.8rem;
+    color: #ddd;
+    letter-spacing: 0.8px;
+}
+
+.card:hover .face.front-face {
+    transform: rotateY(180deg);
+}
+
+.card .face.back-face {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.06);
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.card .face.back-face .fa-quote-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.2rem;
+}
+
+.card .face.back-face .fa-quote-right {
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+    font-size: 1.2rem;
+}
+
+.card:hover .face.back-face {
+    transform: rotateY(360deg);
+}
+
+@media(max-width: 991.5px) {
+    .col-lg-4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color:#200769;">
+    
+        <a class="navbar-brand" style="color:white;" href="#"> <img src="image/rnvk_logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            RNVK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color:white" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                    role="button" data-toggle="dropdown" style="color:white">About</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Mision&Vision</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Teaching staff</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                    role="button" data-toggle="dropdown" style="color:white">Academics</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Highschool</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Primary</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">College</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white">Faculties</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                    role="button" data-toggle="dropdown" style="color:white">Gallary</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">RNVK Sankalp</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Independence Day</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Childrens Day</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Sankalp Prize Distribution</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Guru Namana</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                    role="button" data-toggle="dropdown" style="color:white">Activities</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Sankranti</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Krishna Janmastami</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Exhibition</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Christmas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color:#fd5f00">Other activities</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white">Online Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="face front-face">
+                        <img src="image/vision.png"
+                            alt="" class="profile">
+                        <div class="pt-3 text-uppercase name">
+                            Vision
+                        </div>
+                        <div class="designation"></div>
+                    </div>
+                    <div class="face back-face">
+                        <span class="fas fa-quote-left"></span>
+                        <div class="testimonial">
+                            To educate all students to the highest levels of academic achievement, to enable them to reach and expand their potential, 
+                            and to prepare them to become productive, responsible, ethical, creative and compassionate members of society
+                        </div>
+                        <span class="fas fa-quote-right"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="face front-face">
+                        <img src="image/mission.png"
+                            alt="" class="profile">
+                        <div class="pt-3 text-uppercase name">
+                            Mision
+                        </div>
+                        
+                    </div>
+                    <div class="face back-face">
+                        <span class="fas fa-quote-left"></span>
+                        <div class="testimonial">
+                            RNVK believe that education should take place in a fully inclusive environment with equal opportunities for all and that all children should learn to value religious and cultural differences. 
+                            
+                        </div>
+                        <span class="fas fa-quote-right"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="face front-face">
+                        <img src="image/mandate.png"
+                            alt="" class="profile">
+                        <div class="pt-3 text-uppercase name">
+                            Mandate
+                        </div>
+                    
+                    </div>
+                    <div class="face back-face">
+                        <span class="fas fa-quote-left"></span>
+                        <div class="testimonial">
+                            Account keeper is the most valuable business research we have EVER purchased. Without
+                            electrician, we would ahave gone bankrupt by now.
+                        </div>
+                        <span class="fas fa-quote-right"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

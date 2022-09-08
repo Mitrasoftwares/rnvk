@@ -1,0 +1,33 @@
+.flexitems{
+    background-color: None;
+    border:1px solid rgb(203, 88, 70);
+    margin:10px;
+    height:30px;
+    width:300px;
+    
+    
+}
+.fitem{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.f1{
+    color:rgb(214, 78, 20);
+    text-align: center;
+    font-size: 35px;
+
+}
+.f2{
+
+    background-color: None;
+    border:1px solid rgb(214, 78, 20); ;
+    margin:12px;
+    height:100px;
+    width:400px;
+    justify-content: center;
+    padding:0;
+}
+.f3{
+    color: rgb(129, 25, 25);
+}

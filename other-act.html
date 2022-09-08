@@ -1,0 +1,445 @@
+<html>
+    <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://code.jquery.com/jquery.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+     <!-- CSS Code -->
+    <link rel="stylesheet" href="CSS/gallery-style.css">
+    <link rel="short icon" type="image/x-icon" href="images/logo.png">
+    <title>School Activities</title>
+
+    <!-- Favicon -->
+    <link href="image/rnvk_logo.png" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=919036004323&text=hello%21%20rnvk." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- Template Stylesheet -->
+
+    <link href="CSS/index1.css" rel="stylesheet">
+     
+     
+     
+    <!-- Javascript for each modal containing a different pic. This code was written so that you don't have to write multiple modal divs -->
+     <script>
+     $(document).ready(function() {
+    var $lightbox = $('#lightbox');
+    $('[data-target="#lightbox"]').on('click', function(event) {
+        var $img = $(this).find('img'), 
+            src = $img.attr('src'),
+            alt = $img.attr('alt'),
+            css = {
+                'maxWidth': $(window).width() - 100,
+                'maxHeight': $(window).height() - 100
+            };
+        $lightbox.find('img').attr('src', src);
+        $lightbox.find('img').attr('alt', alt);
+        $lightbox.find('img').css(css);
+    });
+    $lightbox.on('shown.bs.modal', function (e) {
+        var $img = $lightbox.find('img');
+        $lightbox.find('.modal-dialog').css({'width': $img.width()});
+        $lightbox.find('.close').removeClass('hidden');
+    });
+});
+     </script>
+   </head>
+
+
+<body>
+
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:080-28367282"> <p>080-28367282</p></a>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                          <a href="mailto:info@rnvk.in"><p>info@rnvk.in</p></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href="https://www.youtube.com/channel/UC5x1B_rm0q-x1ikQ31ViGyA"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/rnvk.edu"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/rashtriya-navodaya-vidya-kendra-580a6a161"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/rnvk_edu/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+<div class="navbar navbar-expand-lg bg-dark navbar-dark">
+<div class="container-fluid">
+            <img src="image/rnvk_logo.png" alt="Image"style="height: 75px;width: 75px;">
+            <h1>RASTRIYA NAVODAYA VIDYA KENDRA</h1>
+            <!--<a href="index.html" class="navbar-brand">ANUGRAHA SOCIAL WELFARE SOCIETY®</a>-->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"style="align-items:left;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                        
+                        
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">    
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle"  data-toggle="dropdown">About<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="vision-mission-mandate.html">Mission & Vission</a></li>
+                            <li><a href="management.html">Management</a></li>
+                            <li><a href="Technical-staff.html">Technical-staff</a></li>                
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">    
+                    <li class="dropdown">
+                    <a href="" class="dropdown-toggle"  data-toggle="dropdown">Academics<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Highschool</a></li>
+                        <li><a href="#">Primary</a></li>
+                        <li><a href="#">College</a></li>    
+                                    
+                    </ul>
+                    </li>
+                </div>
+
+                <a href="facilities.html"class="nav-item nav-link">Facilities</a>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">    
+                    <li class="dropdown">
+                    <a href="" class="dropdown-toggle"  data-toggle="dropdown">Gallery<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rnvk-sankalpa.html">RNVK Sankalpa</a></li>
+                        <li><a href="independence-day.html">Independence Day</a></li>
+                        <li><a href="childrens-day.html">Childrens Day</a></li>
+                        <li><a href="prize-dist.html">Sankalpa Prize Distribution</a></li> 
+                        <li><a href="guru.html">Guru Namana</a></li>
+                        <li><a href="sankranti.html">Sankranti</a></li>
+                        <li><a href="krishna.html">Krishna Janmastami</a></li>
+                        <li><a href="exhibition.html">Exhibition </a></li>
+                        <li><a href="christmas.html">Christmas</a></li> 
+                        <li><a href="other-act.html">Other Activities</a></li>   
+                              
+                    </ul>
+                    </li>
+                </div>
+
+                <!-- <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">    
+                    <li class="dropdown">
+                    <a href="" class="dropdown-toggle"  data-toggle="dropdown">RNVK Activities<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sankranti.html">Sankranti</a></li>
+                        <li><a href="krishna.html">Krishna Janmastami</a></li>
+                        <li><a href="exhibition.html">Exhibition </a></li>
+                        <li><a href="christmas.html">Christmas</a></li> 
+                        <li><a href="other-act.html">Other Activities</a></li>          
+                    </ul>
+                    </li>
+                </div> -->
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">    
+                    <li class="dropdown">
+                    <a href="" class="dropdown-toggle"  data-toggle="dropdown">Online Application<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="apply-online.html">School Online Apply</a></li>
+                        <li><a href="apply-online.php">PUC Online Apply</a></li>
+                        <li><a href="#">Re-Print/Payment </a></li>     
+                    </ul>
+                    </li>
+                </div>    
+                        
+                <a href="contacus.html" class="nav-item nav-link">Contact</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Nav Bar End -->
+
+<!-- Carousel Start -->
+<div class="carousel">
+    <div class="container-fluid">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="image/school 2.png" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <img src="image/rnvk_logo.png" style="width: 100px;height: 100px;"alt="">
+                    <h1>RNVK</h1>
+                    <p style="font-size: 35px;">RASTRIYA NAVODAYA VIDYA KENDRA</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+    <div class="container">
+        <h2><b>School Activities</b></h2>
+    </div>
+    <div class="container mt100">
+        <section class="row">
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/1.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                    <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                        <img src="image/activities/2.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/3.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/4.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/5.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/6.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/7.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/8.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/9.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/10.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/11.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-6 image-holder">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                            <img src="image/activities/12.JPG" alt="...">
+                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+      <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">RNVK Sankalpa</h4>
+        </div>
+            <div class="modal-body">
+                <img src="" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+        </section> <!-- closing section -->
+    </div> <!-- closing div container -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container-fluid" style="text-align: center;">
+            <img src="image/rnvk_logo.png" alt="Image"style="height: 75px;width: 75px;"> <span style="color: white;font-size:20px;">RASTRIYA NAVODAYA VIDYA KENDRA </span>
+        </div>
+        <div class="containers">
+          &nbsp;  <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Our Head Office</h2>
+                        <p><i class="fa fa-location-arrow"></i>52, Thigalarapalya Main Rd, Peenya 2nd Stage, Balaji Nagar, Peenya, Bengaluru-560058</p>
+                        <p><i class="fa fa-phone" href="tel:080-28367282"></i>080-28367282</p>
+                        <p><i class="fa fa-envelope"></i>info@rnvk.in</p>
+                        <div class="footer-social">
+                            <a class="btn btn-custom" href="tel:080-28367282"><i class="fa fa-phone"></i></a>
+                            <a class="btn btn-custom" href="https://www.facebook.com/rnvk.edu"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-custom" href="https://www.youtube.com/channel/UC5x1B_rm0q-x1ikQ31ViGyA"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-custom" href="https://www.instagram.com/rnvk_edu/?hl=en"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-custom" href="https://api.whatsapp.com/send?phone=919036004323&text=hello%21%20rnvk."><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Popular Links</h2>
+                        <a href="index.html">Home</a>
+                        <a href="vision-mission-mandate.html">About Us</a>
+                        <a href="">Academics</a>
+                        <a href="facilities.html">Facilities</a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Gallery Links</h2>
+                        <a href="rnvk-sankalpa.html">RNVK Sankalpa</a>
+                        <a href="independence-day.html">Independace Day</a>
+                        <a href="childrens-day.html" >Childrens Day</a>
+                        <a href="guru.html">Guru Namana</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Useful Links</h2>
+                        <a href="">School Online Application</a>
+                        <a href="">PUC Online Apply</a>
+                        <a href="">Re-Print/Payment</a>
+                        <a href="contacus.html">Contact</a>
+                    </div>
+                </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-newsletter">
+                            <!-- <h2>Newsletter</h2> -->
+                            <form>
+                                <!-- <input class="form-control" placeholder="Email goes here">
+                                <button class="btn btn-custom">Submit</button>
+                                <label>Don't worry, we don't spam!</label> -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.344830633262!2d77.49247141477102!3d13.01369929082827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3cf3676d5b21%3A0xe157e02c0c5f17b2!2sRashtriya%20Navodaya%20Vidya%20Kendra!5e0!3m2!1sen!2sin!4v1662189040345!5m2!1sen!2sin" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; <a href="index.html">Rashtriya Navodaya Vidya Kendra</a>, All Right Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Design & developed By <a href="https://mitrasoftwares.in/">MITRA SOFTWARES</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+                            <!-- JavaScript Libraries -->
+                            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+                            <script src="lib/easing/easing.min.js"></script>
+                            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                            <script src="lib/waypoints/waypoints.min.js"></script>
+                            <script src="lib/counterup/counterup.min.js"></script>
+                            <script src="lib/parallax/parallax.min.js"></script>
+                            
+                            <!-- Contact Javascript File -->
+                            <script src="JS/mail/jqBootstrapValidation.min.js"></script>
+                            <script src="JS/mail/contact.js"></script>
+                    
+                            <!-- Template Javascript -->
+                            <script src="JS/main.js"></script>
+    <body>
+</html>
